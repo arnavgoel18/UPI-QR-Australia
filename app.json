@@ -3,6 +3,9 @@
     "name": "UPI-QR-Australia",
     "slug": "UPI-QR-Australia",
     "version": "1.0.0",
+    "platforms": [
+      "ios"
+    ],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -15,7 +18,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.UPI-QR-Australia",
+      "infoPlist": {
+        "NSCameraUsageDescription": "We need access to your camera to scan QR codes."
+      }
     },
     "android": {
       "adaptiveIcon": {
